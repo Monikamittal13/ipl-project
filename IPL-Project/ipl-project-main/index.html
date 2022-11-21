@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section start -->
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src="https://cdn5.newsnationtv.com/images/2020/08/21/ipllogojpeg-25.jpg"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Enter team name" />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()">
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section end -->
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <input type="radio" name="radio-btn" id="radio5" />
+
+        <div class="slide">
+          <img src="https://newsroom.gy/wp-content/uploads/2020/03/IPL.jpg" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="https://images.thequint.com/thequint/2018-05/09739c09-50c6-4604-847e-e9d9c61de9b9/csk_photo.jpg?rect=0%2C0%2C4800%2C2700&auto=format%2Ccompress&fmt=webp" alt="" />
+        </div>
+        <div class="slide">
+          <img src="http://2.bp.blogspot.com/-8s__Rj6t7Fc/Uy6pOHVWtiI/AAAAAAAAB60/qV33n55GOfI/s1600/24383.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="http://4.bp.blogspot.com/-AwlpDljYu3c/UYKT5JB3iGI/AAAAAAAAC5w/6kx6Dv4_iK8/s1600/CSK+v+Kings+XI+Match+45+IPL+2013+HD+Photos-10.jpg" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">Teams</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <footer>
+      <div><h4>IPL Cricket Teams</h4></div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
